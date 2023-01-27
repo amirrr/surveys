@@ -6,7 +6,6 @@ import packageJson from "../package.json";
 StylesManager.applyTheme("modern");
 
 export default function SurveyFactory(surveyName, surveyJson, scoreFunc, sha) {
-  console.log("sha", sha);
   function Survey({ onComplete, storageName }) {
     const surveyModel = new Model(surveyJson);
 
